@@ -5,7 +5,6 @@ cask 'cooviewer' do
   # https://github.com/coo-ona/cooViewer
   # github.com/coo-ona/cooViewer was verified as official when first introduced to the cask
   url "https://github.com/coo-ona/cooViewer/releases/download/#{version}/cooViewer.zip"
-  livecheck 'https://github.com/coo-ona/cooViewer/releases.atom'
   name 'cooViewer'
   homepage 'https://coo-ona.github.io/cooViewer/'
 
