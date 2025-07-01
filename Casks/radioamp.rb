@@ -2,7 +2,7 @@ cask "radioamp" do
   version "0.0.1"
   sha256 "sha256:a790a915812293403c3d544837b7982286e5503436d7d428da23012e577bb0af"
 
-  url "https://github.com/moonstruckdrops/radioamp/releases/download/v#{version}/RadioAMP-#{version}.dmg"
+  url "https://github.com/moonstruckdrops/radioamp/releases/download/v#{version}/RadioAMP-#{version}-arm64.dmg"
   name "RadioAMP"
   desc "Radio Streaming Application"
   homepage "https://github.com/moonstruckdrops/radioamp"
