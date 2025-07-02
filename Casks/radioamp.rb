@@ -1,4 +1,4 @@
-require_relative "strategy"
+require_relative "../strategy"
 
 cask "radioamp" do
   version "0.0.1"
