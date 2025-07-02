@@ -109,7 +109,7 @@ cask "radioamp" do
 
   binary "#{appdir}/RadioAMP.app/Contents/MacOS/RadioAMP", target: "radioamp"
 
-  caveats do
+  postflight do
     system "xattr -rc #{appdir}/RadioAMP.app"
   end
 
