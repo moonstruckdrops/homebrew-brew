@@ -108,7 +108,10 @@ cask "radioamp" do
   app "RadioAMP.app"
 
   binary "#{appdir}/RadioAMP.app/Contents/MacOS/RadioAMP", target: "radioamp"
-  system "xattr -rc #{appdir}/RadioAMP.app"
+
+  caveats do
+    system "xattr -rc #{appdir}/RadioAMP.app"
+  end
 
   zap trash: [
     "~/Library/Application Support/RadioAMP",
