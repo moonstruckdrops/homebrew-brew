@@ -106,9 +106,9 @@ cask "radioamp" do
   depends_on arch: :arm64
 
   app "RadioAMP.app"
-  system "xattr -rc #{appdir}/RadioAMP.app"
 
   binary "#{appdir}/RadioAMP.app/Contents/MacOS/RadioAMP", target: "radioamp"
+  system "xattr -rc #{appdir}/RadioAMP.app"
 
   zap trash: [
     "~/Library/Application Support/RadioAMP",
