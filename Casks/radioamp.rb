@@ -1,3 +1,6 @@
+# GitHubのプライベートリポジトリの対応
+# https://www.estie.jp/blog/entry/2024/08/06/100304
+# https://dev.to/jhot/homebrew-and-private-github-repositories-1dfh
 class GitHubPrivateRepositoryDownloadStrategy < CurlDownloadStrategy
   require "utils/formatter"
   require "utils/github"
@@ -109,6 +112,9 @@ cask "radioamp" do
 
   binary "#{appdir}/RadioAMP.app/Contents/MacOS/RadioAMP", target: "radioamp"
 
+  # インストールすると壊れている扱いになるので属性をクリアする対応
+  # https://yotiosoft.com/support/help/macos-blocked.html
+  # https://github.com/Homebrew/brew/issues/17979
   postflight do
     system "xattr -rc #{appdir}/RadioAMP.app"
   end
