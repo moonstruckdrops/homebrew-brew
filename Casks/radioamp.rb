@@ -97,8 +97,8 @@ class GitHubPrivateRepositoryReleaseDownloadStrategy < GitHubPrivateRepositoryDo
 end
 
 cask "radioamp" do
-  version "0.0.2"
-  sha256 "bba299b07e0bcca75d84fd876cc6dfb9c1488a8d60b698046d57a738927ebe2d"
+  version "0.0.4"
+  sha256 "4db64352812145d5fcc2fb642db8d3d99438a14f9804829eb9120fa59d93bdf6"
   # url "https://github.com/moonstruckdrops/radioamp/releases/download/v#{version}/RadioAMP-#{version}-arm64.dmg", using: GitHubPrivateRepositoryReleaseDownloadStrategy
   url "https://github.com/moonstruckdrops/radioamp/releases/download/v/RadioAMP-0.0.1-arm64.dmg", using: GitHubPrivateRepositoryReleaseDownloadStrategy
   name "RadioAMP"
