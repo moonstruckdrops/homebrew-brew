@@ -98,7 +98,7 @@ end
 
 cask "radioamp" do
   version "0.0.4"
-  sha256 "4a57edbf6059597b594fcd98301d9d0a61f8f8dfa0913e5dfdf11904cc5cfd4c"
+  sha256 "53eb034b4af9575b73113d79c978c6b1489fc9fc0845a5b2d026e5f168f72897"
   # url "https://github.com/moonstruckdrops/radioamp/releases/download/v#{version}/RadioAMP-#{version}-arm64.dmg", using: GitHubPrivateRepositoryReleaseDownloadStrategy
   url "https://github.com/moonstruckdrops/radioamp/releases/download/v/RadioAMP-0.0.1-arm64.dmg", using: GitHubPrivateRepositoryReleaseDownloadStrategy
 
